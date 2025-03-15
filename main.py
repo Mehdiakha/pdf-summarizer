@@ -42,7 +42,6 @@ def main():
             
             # save summary to a json file
             json_file_path = "summary_json"
-            
             summary_text = summary.get('output_text', '')
             
             with open(json_file_path, "w") as f:

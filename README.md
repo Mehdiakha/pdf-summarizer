@@ -16,16 +16,21 @@ PDF Summarizer is a Python-based tool that processes PDF files, extracts text, a
 
 🌐 REST API for easy integration
 
-How to use it:
-1 - git clone https://github.com/Mehdiakha/pdf-summarizer.git
+## How to use it:
+
+'''bash
+
+git clone https://github.com/Mehdiakha/pdf-summarizer.git
 cd pdf-summarizer
 
-2- python -m venv .venv
+python -m venv .venv
 source .venv/bin/activate # On Windows, use .venv\Scripts\activate
 pip install -r requirements.txt
 
-3- set up your mistralaikey
+set up your mistralaikey
 MISTRAL_API_KEY=your_mistral_api_key
 
-4-place your pdf file inside the project and run the summarizer
+place your pdf file inside the project and run the summarizer
 python main.py
+
+'''
