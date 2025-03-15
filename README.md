@@ -18,7 +18,7 @@ PDF Summarizer is a Python-based tool that processes PDF files, extracts text, a
 
 ## How to use it:
 
-'''sh
+```sh
 
 git clone https://github.com/Mehdiakha/pdf-summarizer.git
 cd pdf-summarizer
@@ -33,4 +33,4 @@ MISTRAL_API_KEY=your_mistral_api_key
 place your pdf file inside the project and run the summarizer
 python main.py
 
-'''
+```
