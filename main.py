@@ -1,4 +1,5 @@
 import os
+import argparse
 import json
 from dotenv import load_dotenv
 
@@ -26,11 +27,27 @@ def summarize_pdf(file_path):
         print(f"an error occured: {e}")
         return None
 
+def main():
+    parser = argparse.ArgumentParser(prog="summyPDF", description="PDF summarizer")
+    parser.add_argument("--pdf", required=True, type=str, help='Path to the pdf file to summarize')
+    
+    args = parser.parse_args()
+    
+    summary = summarize_pdf(args.pdf)
+    
+    if summary:    
+            print('Summary:')
+            print('\n')
+            print(summary['output_text'])
+            
+            # save summary to a json file
+            json_file_path = "summary_json"
+            
+            summary_text = summary.get('output_text', '')
+            
+            with open(json_file_path, "w") as f:
+                json.dump({"summary": summary_text}, f, indent = 4)
+
 
 if __name__ == "__main__":
-    summary = summarize_pdf('test.pdf')
-    
-    print('Summary:')
-    print('\n')
-    print(summary['output_text'])
-
+    main()
