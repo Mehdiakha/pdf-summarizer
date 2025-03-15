@@ -18,7 +18,7 @@ PDF Summarizer is a Python-based tool that processes PDF files, extracts text, a
 
 ## How to use it:
 
-'''bash
+'''sh
 
 git clone https://github.com/Mehdiakha/pdf-summarizer.git
 cd pdf-summarizer
