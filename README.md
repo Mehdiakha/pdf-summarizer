@@ -2,7 +2,7 @@
 
 🚀 Project Overview
 
-PDF Summarizer is a Python-based tool that processes PDF files, extracts text, and generates concise summaries using AI-powered language models. It is built using FastAPI for the backend and leverages LangChain for natural language processing.
+PDF Summarizer is a Python-based tool that processes PDF files, extracts text, and generates concise summaries using AI-powered language models. It leverages LangChain for natural language processing.
 
 ✨ Features
 
