@@ -1,0 +1,13 @@
+[project]
+name = "pdf-summarizer"
+version = "0.1.0"
+description = "pdf processor & summarizer"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.20",
+    "langchain-anthropic>=0.3.10",
+    "langchain-community>=0.3.19",
+    "langchain-openai>=0.3.8",
+    "python-dotenv>=1.0.1",
+]
